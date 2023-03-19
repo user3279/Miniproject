@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "cancer-society-38276": {
+      "hosting": {
+        "miniprjct": [
+          "cancer-society-38276"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "cancer-society-38276"
+  }
+}

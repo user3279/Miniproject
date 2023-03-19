@@ -97,6 +97,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "miniprjct:build:production",
+            "firebaseProject": "cancer-society-38276",
+            "firebaseHostingSite": "cancer-society-38276"
+          }
         }
       }
     }

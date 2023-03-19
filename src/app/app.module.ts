@@ -14,6 +14,12 @@ import { SymptomsComponent } from './pages/symptoms/symptoms.component';
 import { NavbarComponent } from './unit/navbar/navbar.component';
 import { Singlepg1Component } from './pages/singlepg1/singlepg1.component';
 import { MoreComponent } from './pages/more/more.component';
+import { Singlepage1Component } from './pages/singlepage1/singlepage1.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAuth,getAuth } from '@angular/fire/auth';
+import { provideDatabase,getDatabase } from '@angular/fire/database';
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 
 @NgModule({
   declarations: [
@@ -28,11 +34,16 @@ import { MoreComponent } from './pages/more/more.component';
     SymptomsComponent,
     NavbarComponent,
     Singlepg1Component,
-    MoreComponent
+    MoreComponent,
+    Singlepage1Component
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAuth(() => getAuth()),
+    provideDatabase(() => getDatabase()),
+    provideFirestore(() => getFirestore()),
   ],
   providers: [],
   bootstrap: [AppComponent]
