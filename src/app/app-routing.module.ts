@@ -7,6 +7,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { SignupComponent } from './pages/signup/signup.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { MoreComponent } from './pages/more/more.component';
+import { AboutComponent } from './pages/about/about.component';
 const routes: Routes = [
   {
     path:'', component:HomeComponent
@@ -21,7 +22,7 @@ const routes: Routes = [
   },
 
   {
-    path:'Contact', component:ContactComponent
+    path:'contact', component:ContactComponent
   },
 
   {
@@ -34,6 +35,9 @@ const routes: Routes = [
 
   {
     path:'more', component:MoreComponent
+  },
+  {
+    path:'about', component:AboutComponent
   }
 
 ];

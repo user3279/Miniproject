@@ -35,7 +35,7 @@ import { provideFirestore,getFirestore } from '@angular/fire/firestore';
     NavbarComponent,
     Singlepg1Component,
     MoreComponent,
-    Singlepage1Component
+    
   ],
   imports: [
     BrowserModule,
